@@ -13,11 +13,17 @@ This project is a real-time Sign Language Interpreter that uses computer vision 
 ## Citation
 
 ### Data
-  - The ISS data comes directly from NASA's website which is the most updated and recent data regarding the International Space Station. The data is presented as a .txt and .XML, for this script, we will be using the .XML:
-[     https://spotthestation.nasa.gov/trajectory_data.cfm 
-](https://nasa-public-data.s3.amazonaws.com/iss-coords/current/ISS_OEM/ISS.OEM_J2K_EPH.xml)https://nasa-public-data.s3.amazonaws.com/iss-coords/current/ISS_OEM/ISS.OEM_J2K_EPH.xml
+The data for the Sign Language Interpreter was obtained by capturing images of hand gestures using a webcam. The process involved the following steps:
 
-Click the link above to download the data and save it to the same folder as your python script.
+  1) Image Capture: Using the collect_imgs.py script, images of each ASL gesture were captured in real-time. For each letter of the ASL alphabet, multiple images were collected to      ensure a varied dataset.
+
+  2) Gesture Variation: The data was gathered by performing the ASL gestures in different hand positions, angles, and lighting conditions, to account for variations in real-world       scenarios.
+
+  3) Manual Labeling: Each image was manually labeled with the corresponding ASL letter, ensuring accurate training data for the machine learning model.
+
+This method of data collection created a diverse set of images, which served as the foundation for training the ASL gesture recognition model.
+
+Data folder also contains all the images we used to train our model.
 
 ## How to Run
 
